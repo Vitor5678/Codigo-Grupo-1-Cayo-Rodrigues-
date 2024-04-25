@@ -87,10 +87,10 @@ while video_capture.isOpened():
                 cv.putText(frame, f"Olá, {nome_correspondente.split('.')[0]}", (50, 150), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
             if inclinacao_cabeca is not None and abs(inclinacao_cabeca) > 0.1:
-                cv.putText(frame, "Mova a cabeca", (50, 50), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+                cv.putText(frame, "Mova a cabeca", (50, 50), cv.FONT_HERSHEY_SIMPLEX, 1, (1, 37, 40), 2)
 
             if not olho_esquerdo_aberto or not olho_direito_aberto:
-                cv.putText(frame, "Pisque os olhos", (50, 100), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+                cv.putText(frame, "Pisque os olhos", (50, 100), cv.FONT_HERSHEY_SIMPLEX, 1, (1, 37, 40), 2)
             
             
 
